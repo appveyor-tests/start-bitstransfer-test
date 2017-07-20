@@ -3,4 +3,5 @@ build: off
 test_script:
 - ps: $url = 'https://storage.googleapis.com/dart-archive/channels/dev/raw/1.25.0-dev.4.0/sdk/dartsdk-windows-x64-release.zip'
 - ps: $fileName = "$env:temp\dartsdk-windows-x64-release.zip"
+- ps: Import-Module BitsTransfer
 - ps: Start-BitsTransfer -Source $url -Destination $fileName
