@@ -1,4 +1,5 @@
 build: off
 
 test_script:
+- ps: Disable-NetFirewallRule -DisplayName 'Core Networking - Group Policy (NP-Out)'
 - powershell .\test-bitstransfer.ps1
