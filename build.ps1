@@ -1,0 +1,1 @@
+ .\test-bitstransfer.ps1
